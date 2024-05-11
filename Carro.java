@@ -2,7 +2,7 @@ public class Carro extends Vehiculo implements Funcionamiento, Combustible{
     private int volume;
 
     public Carro(String modelo, String marca, int volume, String color) {
-        super("Automovil", marca, modelo, color,4);
+        super(new Televisor(), new Computador(),"Automovil", marca, modelo, color,4);
         this.volume = volume;
     }
 
@@ -23,5 +23,13 @@ public class Carro extends Vehiculo implements Funcionamiento, Combustible{
     @Override
     public void cargarCombustible() {
         System.out.println("Gasolina Premium");
+    }
+
+    public void fromTelevisor(){
+        getTelevisor().encenderDispositivo();
+    }
+
+    public void fromComputador(){
+        getComputador().encenderDispositivo();
     }
 }

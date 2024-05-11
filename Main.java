@@ -43,5 +43,8 @@ public class Main {
         scooter1.frenar();
         System.out.println();
 
+        carro1.fromTelevisor();
+        carro1.fromComputador();
+
     }
 }

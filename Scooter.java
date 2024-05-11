@@ -17,7 +17,7 @@ public class Scooter extends DosRuedas implements Funcionamiento{
 
     @Override
     public void acelerar() {
-        System.out.println("Acelerar como scooter" + getModalidad() + "!");
+        System.out.println("Acelerar como scooter " + getModalidad() + "!");
     }
 
     @Override

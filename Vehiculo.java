@@ -4,12 +4,25 @@ public class Vehiculo {
     private String modelo;
     private String color;
     private int ruedas;
+    private Televisor televisor;
+    private Computador computador;
 
     Vehiculo(String tipo, int ruedas){
         this.tipo = tipo;
         this.ruedas = ruedas;
     }
+
     Vehiculo(String tipo, String marca, String modelo, String color, int ruedas){
+        this.tipo = tipo;
+        this.marca = marca;
+        this.modelo = modelo;
+        this.color = color;
+        this.ruedas = ruedas;
+    }
+
+    Vehiculo(Televisor televisor, Computador computador, String tipo, String marca, String modelo, String color, int ruedas){
+        this.televisor = new Televisor();
+        this.computador = new Computador();
         this.tipo = tipo;
         this.marca = marca;
         this.modelo = modelo;
@@ -31,5 +44,13 @@ public class Vehiculo {
     }
     public int getRuedas() {
         return ruedas;
+    }
+
+    public Televisor getTelevisor() {
+        return televisor;
+    }
+
+    public Computador getComputador() {
+        return computador;
     }
 }
