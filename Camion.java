@@ -2,7 +2,7 @@ public class Camion extends Vehiculo implements Funcionamiento, Combustible{
     private int volume;
 
     public Camion(String modelo, String marca, int volume, String color) {
-        super("Camión",marca , modelo, color, 10);
+        super(new Televisor(), new Computador(), "Camión", marca , modelo, color, 10);
         this.volume = volume;
     }
 

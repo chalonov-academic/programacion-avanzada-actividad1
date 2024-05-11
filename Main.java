@@ -43,8 +43,14 @@ public class Main {
         scooter1.frenar();
         System.out.println();
 
-        carro1.fromTelevisor();
-        carro1.fromComputador();
+        System.out.println("Vehiculo de " + carro1.getRuedas() + " ruedas: " + carro1.getMarca() + "-" + carro1.getModelo() + " (" + carro1.getColor() + ")");
+        carro1.fromTelevisorOn();
+        carro1.fromTelevisorOff();
 
+        System.out.println();
+
+        System.out.println("Vehiculo de " + camion1.getRuedas() + " ruedas: " + camion1.getMarca() + "-" + camion1.getModelo() + " (" + camion1.getColor() + ")");
+        camion1.fromComputadorOn();
+        camion1.fromComputadorOff();
     }
 }

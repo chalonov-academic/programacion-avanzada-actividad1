@@ -53,4 +53,20 @@ public class Vehiculo {
     public Computador getComputador() {
         return computador;
     }
+
+    public void fromTelevisorOn(){
+        getTelevisor().encenderDispositivo();
+    }
+
+    public void fromComputadorOn(){
+        getComputador().encenderDispositivo();
+    }
+
+    public void fromTelevisorOff(){
+        getTelevisor().apagarDispositivo();
+    }
+
+    public void fromComputadorOff(){
+        getComputador().apagarDispositivo();
+    }
 }
