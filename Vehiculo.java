@@ -5,7 +5,10 @@ public class Vehiculo {
     private String color;
     private int ruedas;
 
-    Vehiculo(){}
+    Vehiculo(String tipo, int ruedas){
+        this.tipo = tipo;
+        this.ruedas = ruedas;
+    }
     Vehiculo(String tipo, String marca, String modelo, String color, int ruedas){
         this.tipo = tipo;
         this.marca = marca;

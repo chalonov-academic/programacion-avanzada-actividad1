@@ -5,6 +5,7 @@ public class Main {
         Moto moto1 = new Moto("Ninja 400 KRT", "Kawasaki", 400, "Verde");
         Bicicleta bici1 = new Bicicleta("Madone", "Trek", "ruta", "Blanca");
         Camion camion1 = new Camion("S-Way", "Iveco", 12800, "Naranja");
+        Scooter scooter1 = new Scooter("Electrica");
 
         System.out.println("Vehiculo de " + carro1.getRuedas() + " ruedas: " + carro1.getMarca() + "-" + carro1.getModelo() + " (" + carro1.getColor() + ")");
         System.out.println("Tipo: " + carro1.getTipo() + " (" + carro1.getVolume() + "cc)");
@@ -33,6 +34,13 @@ public class Main {
         camion1.cargarCombustible();
         camion1.acelerar();
         camion1.frenar();
+        System.out.println();
+
+        System.out.println("Vehiculo de " + scooter1.getRuedas() + " ruedas");
+        System.out.println("Tipo: " + scooter1.getTipo() + " (" + scooter1.getModalidad() + ")");
+        scooter1.proteccion();
+        scooter1.acelerar();
+        scooter1.frenar();
         System.out.println();
 
     }
