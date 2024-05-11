@@ -22,6 +22,6 @@ public class Camion extends Vehiculo implements Funcionamiento, Combustible{
 
     @Override
     public void cargarCombustible() {
-        System.out.println("Diesel");
+        System.out.println("Cargar combustible: Diesel");
     }
 }
