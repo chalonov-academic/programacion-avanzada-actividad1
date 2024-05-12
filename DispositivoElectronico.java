@@ -1,6 +1,6 @@
 public abstract class DispositivoElectronico{
-    private String dispositivo;
-    private int pantalla;
+    protected String dispositivo;
+    protected int pantalla;
 
     public DispositivoElectronico(String dispositivo, int pantalla){
         this.dispositivo = dispositivo;

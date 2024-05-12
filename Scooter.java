@@ -27,6 +27,6 @@ public class Scooter extends DosRuedas implements Funcionamiento{
 
     @Override
     public void proteccion() {
-        System.out.println("Protección: Casco, rodilleras y guantes");
+        System.out.println("Usar protección: Casco, rodilleras y guantes");
     }
 }

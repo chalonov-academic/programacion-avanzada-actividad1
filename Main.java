@@ -5,21 +5,23 @@ public class Main {
         Moto moto1 = new Moto("Ninja 400 KRT", "Kawasaki", 400, "Verde");
         Bicicleta bici1 = new Bicicleta("Madone", "Trek", "ruta", "Blanca");
         Camion camion1 = new Camion("S-Way", "Iveco", 12800, "Naranja");
-        Scooter scooter1 = new Scooter("Electrica");
+        Scooter scooter1 = new Scooter("Eléctrica");
 
         System.out.println("Vehiculo de " + carro1.getRuedas() + " ruedas: " + carro1.getMarca() + "-" + carro1.getModelo() + " (" + carro1.getColor() + ")");
         System.out.println("Tipo: " + carro1.getTipo() + " (" + carro1.getVolume() + "cc)");
-        carro1.cargarCombustible();
         carro1.acelerar();
+        carro1.descargarCombustible();
         carro1.frenar();
+        carro1.cargarCombustible();
         System.out.println();
 
         System.out.println("Vehiculo de " + moto1.getRuedas() + " ruedas: " + moto1.getMarca() + "-" + moto1.getModelo() + " (" + moto1.getColor() + ")");
         System.out.println("Tipo: " + moto1.getTipo() + " (" + moto1.getVolume() + "cc)");
         moto1.proteccion();
-        moto1.cargarCombustible();
         moto1.acelerar();
+        moto1.descargarCombustible();
         moto1.frenar();
+        moto1.cargarCombustible();
         System.out.println();
 
         System.out.println("Vehiculo de " + bici1.getRuedas() + " ruedas: " + bici1.getMarca() + "-" + bici1.getModelo()+ " (" + bici1.getColor() + ")");

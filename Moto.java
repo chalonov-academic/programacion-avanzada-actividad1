@@ -12,21 +12,26 @@ public class Moto extends DosRuedas implements Funcionamiento, Combustible{
 
     @Override
     public void acelerar() {
-        System.out.println("Acelerar como moto!");
+        System.out.println(getTipo() + " está acelerando... Wroom! Wroom!");
     }
 
     @Override
     public void frenar() {
-        System.out.println("Frenar como moto");
+        System.out.println(getTipo() + " está frenando... Screech! Screech!");
     }
 
     @Override
     public void cargarCombustible() {
-        System.out.println("Gasolina 98 octanos");
+        System.out.println("Cargar combustible: Gasolina 98 octanos");
+    }
+
+    @Override
+    public void descargarCombustible() {
+        System.out.println("Se está acabando el combustible a la " + getTipo().toLowerCase());
     }
 
     @Override
     public void proteccion() {
-        System.out.println("Protección: Casco, botas y guantes");
+        System.out.println("Usar protección: Casco, botas y guantes");
     }
 }

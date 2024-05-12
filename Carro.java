@@ -12,17 +12,21 @@ public class Carro extends Vehiculo implements Funcionamiento, Combustible{
 
     @Override
     public void acelerar() {
-        System.out.println("Acelerar como " + getTipo() +"... Wroom! Wroom!");
+        System.out.println(getTipo() + " está acelerando... Wroom! Wroom!");
     }
 
     @Override
     public void frenar() {
-        System.out.println("Frenar como carro");
+        System.out.println(getTipo() + " está frenando... Screech! Screech!");
     }
 
     @Override
     public void cargarCombustible() {
-        System.out.println("Gasolina Premium");
+        System.out.println("Cargar combustible: Gasolina Premium");
     }
 
+    @Override
+    public void descargarCombustible() {
+        System.out.println("Se está acabando el combustible al " + getTipo().toLowerCase());
+    }
 }

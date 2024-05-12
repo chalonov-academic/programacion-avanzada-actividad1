@@ -22,6 +22,6 @@ public class Bicicleta extends DosRuedas implements Funcionamiento{
 
     @Override
     public void proteccion() {
-        System.out.println("Protección: Casco y guantes");
+        System.out.println("Usar protección: Casco y guantes");
     }
 }
